@@ -1,0 +1,103 @@
+/* import font from fonts.css file */
+@import url(./fonts.css);
+
+/* import vairables css */
+@import url(./partials/_variables.css);
+
+/* import global styling */
+@import url(./partials/global.css);
+ ::selection{
+     background-color: #764ba2;
+     color: white;
+ }
+.sitemain nav{
+    position:fixed;
+    left:0;
+    top:15rem;
+    padding: 5px;
+}
+.wrapper{
+    list-style: none !important;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: rgb(0 0 0 / 25%) 0px 14px 28px, rgb(0 0 0 / 22%) 0px 10px 10px;
+    transition: all 0.3s ease-out;
+    align-items: center;
+    font-family: 'Roboto Mono', monospace;
+}
+ .wrapper:hover{
+    width: 210px;
+    color: var(--text-color);
+    transform: scale(1.05);
+}
+.nav-button{
+    display: flex;
+    height: 50px;
+    width: 50px;
+}
+.icon{
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    border-radius: 50px;
+    line-height: 60px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    transition: all 0.3s ease-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+#iconsize{
+    width: 50%;
+}
+#myimgsize{
+    width: 60%;
+    height: 55%;
+    border-radius: 50%;
+    padding:0px !important;
+}
+#iconin{
+    width: 30%;
+}
+.sitemain nav .wrapper span{
+    padding-left: .8rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+.sitemain .card-area{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.sitemain .card-area .card{
+    width: 18rem;
+    padding: 5px;
+    color: var(--text-color);
+    text-align: center;
+    height:20rem;
+    text-transform: uppercase;
+    font-family: 'Roboto Mono', monospace;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border: white 1px solid;
+    text-shadow: 2px 7px 5px rgb(0 0 0 / 30%), 0px -4px 10px rgb(255 255 255 / 30%);
+    font-weight: bold;
+}
+.sitemain .card-area .card .card-title{
+    padding-top:1rem;
+}
+.sitemain .social_icon-area{
+    display: flex;
+}
